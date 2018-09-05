@@ -1,3 +1,4 @@
+/* Font Face */
 @font-face {
     font-family: AquaFont;
     src: url(../src/font/aqua.ttf);
@@ -6,7 +7,7 @@ h1 {
     margin: 0;
     font-size: 49px;
 }
-.hi {
+.salute {
     margin-top: 20vh; 
 }
 .short {
@@ -15,23 +16,17 @@ h1 {
 }
 body {
     margin: 0;
+    width: 100wh;
     height: 100vh;
     background-image: url(../imgs/mountains.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.filter {
-    width: 100wh;
-    height: 100vh;
-    background-color: #333333;
-    opacity: .8;
-    position: static;
-}
 .container {
     background-color: transparent;
     color: white;
-    font-family: AquaFont;
+    font-family: 'AquaFont';
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -63,6 +58,9 @@ body {
     cursor: pointer;
     transition: 300ms;
 }
+
+/* Active Part */
+
 .activeOne {
     opacity: 1;
     transform: scale(1);
@@ -73,6 +71,7 @@ body {
 .inactioveOne:hover {
     opacity: .9;
 }
+
 .shorter {
     font-size: 18px;
     opacity: .3;
@@ -100,21 +99,22 @@ a:hover {
     height: 152px;
     background-color: white;
 }
+/* MEDIA SCREEN */
 @media screen and (max-width: 600px) {
     .part1, .part2 {
-        width: 100%;
+            width: 100%;
     }
     .part2 {
-        margin-top: 10vh;
+            margin-top: 10vh;
     }
     h1 {
-        font-size: 28px;
+            font-size: 28px;
     }
     .things {
-        flex-direction: column;
+            flex-direction: column;
     }
     .portbox {
-        width: 65px;
-        height: 65px;
+            width: 65px;
+            height: 65px;
     }
 }
